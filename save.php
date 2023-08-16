@@ -4,7 +4,7 @@ include('db.php');
 
 if (isset($_POST['save'])){
 
-    $image = $_POST['img'];
+    $img = $_POST['img'];
     $dispositivo = $_POST['dispositivo'];
     $modelo = $_POST['modelo'];
     $serie = $_POST['serie'];

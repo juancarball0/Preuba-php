@@ -7,16 +7,16 @@
         $result = mysqli_query($conn, $query);
         if(mysqli_num_rows($result) == 1){
             $row = mysqli_fetch_array($result);
-            $image = $row['img'];
+            $img = $row['img'];
             $dispositivo = $row['dispositivo'];
             $modelo = $row['modelo'];
             $serie = $row['serie'];
-        }
+        }       
     }
 
     if (isset($_POST['update'])) {
         $id = $_GET['id'];
-        $image = $_POST['img'];
+        $img = $_POST['img'];
         $dispositivo = $_POST['dispositivo'];
         $modelo = $_POST['modelo'];
         $serie = $_POST['serie'];

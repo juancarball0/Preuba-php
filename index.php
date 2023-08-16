@@ -25,11 +25,11 @@
                     <div class="form-group">
                         <select class="form-select" name="modelo" aria-label="Default select example" autofocus>
                             <option selected >g-1</option>
-                            <option value="1">g-2</option>
-                            <option value="2">g-3</option>
-                            <option value="3">g-4</option>
-                            <option value="4">g-5</option>
-                            <option value="5">g-6</option>
+                            <option value="g-2">g-2</option>
+                            <option value="g-3">g-3</option>
+                            <option value="g-4">g-4</option>
+                            <option value="g-5">g-5</option>
+                            <option value="g-6">g-6</option>
                         
                         </select>
                     </div>
@@ -71,7 +71,7 @@
 
                         while($row = mysqli_fetch_array($result)) { ?>
                             <tr>
-                                <td><?php echo $row['img'] ?></td>
+                                <td><img src="<?php echo $row['img'] ?>"></td>
                                 <td><?php echo $row['dispositivo'] ?></td>
                                 <td><?php echo $row['modelo'] ?></td>
                                 <td><?php echo $row['serie'] ?></td>
