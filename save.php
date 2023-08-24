@@ -4,12 +4,18 @@ include('db.php');
 
 if (isset($_POST['save'])){
 
-    $img = $_POST['img'];
+    $name_img = $_FILES["photo"]["name"];
+    $temporal=$_FILES["photo"]["tmp_name"];
+    $carpeta='img';
+
+    $ruta= $carpeta.$id.'/'.$name_img;
+    @move_uploaded_file($temporal,$carpeta.$id.'/'.$name_img);
+
     $dispositivo = $_POST['dispositivo'];
     $modelo = $_POST['modelo'];
     $serie = $_POST['serie'];
 
-    $query = "INSERT INTO tabla(img, dispositivo, modelo, serie) VALUES ('$img', '$dispositivo', '$modelo', '$serie')";
+    $query = "INSERT INTO tabla(img, dispositivo, modelo, serie) VALUES ('$ruta', '$dispositivo', '$modelo', '$serie')";
     $result = mysqli_query($conn, $query);
     if (!$result){
         die("Query Failed");

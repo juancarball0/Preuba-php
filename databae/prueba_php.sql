@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-08-2023 a las 17:54:12
+-- Tiempo de generación: 24-08-2023 a las 16:32:06
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -41,8 +41,7 @@ CREATE TABLE `tabla` (
 --
 
 INSERT INTO `tabla` (`id`, `serie`, `img`, `dispositivo`, `modelo`, `fecha`) VALUES
-(2, 'dwa', '', 'wd', '2', '2023-08-16 15:44:11'),
-(3, 'qqwe', '', 'wqe', '3', '2023-08-16 15:51:59');
+(8, 'ads', 0x696d672f333238626431643330336533373138646136616334663533646135626333623363613665323965662e77656270, 'ads', 'g-5', '2023-08-24 14:30:16');
 
 --
 -- Índices para tablas volcadas
@@ -62,7 +61,7 @@ ALTER TABLE `tabla`
 -- AUTO_INCREMENT de la tabla `tabla`
 --
 ALTER TABLE `tabla`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

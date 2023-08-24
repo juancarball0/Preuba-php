@@ -14,7 +14,7 @@
             <?php session_unset(); } ?>
 
             <div class="card card-body">
-                <form action="save.php" method="POST">
+                <form action="save.php" method="POST" enctype="multipart/form-data">
 
                     
 
@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="file" name="img" class="form-control" autofocus->
+                        <input type="file" name="photo" class="form-control" autofocus->
                     </div>
                     
                     <div>
@@ -71,7 +71,7 @@
 
                         while($row = mysqli_fetch_array($result)) { ?>
                             <tr>
-                                <td><img src="<?php echo $row['img'] ?>"></td>
+                                <td><img width="100" height="100" src="<?php echo $row['img'] ?>" alt=""></td>
                                 <td><?php echo $row['dispositivo'] ?></td>
                                 <td><?php echo $row['modelo'] ?></td>
                                 <td><?php echo $row['serie'] ?></td>
